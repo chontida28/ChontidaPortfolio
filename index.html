@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+
+<title>Portfolio | ChaiPhu Channel</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
+
 <header>
 
 <nav>
 
-<div class="logo">MY PORTFOLIO</div>
+<h2 class="logo">Portfolio</h2>
 
 <ul>
 
-<li><a href="#home">หน้าหลัก</a></li>
-<li><a href="#about">เกี่ยวกับ</a></li>
-<li><a href="#education">การศึกษา</a></li>
-<li><a href="#portfolio">ผลงาน</a></li>
-<li><a href="#contact">ติดต่อ</a></li>
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+
+<li><a href="#contact">Contact</a></li>
 
 </ul>
 
@@ -32,19 +45,22 @@
 
 </header>
 
-<!-- Hero -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
 <div class="hero-text">
 
-<h1>______________________</h1>
+<h1>วุฒิศักดิ์ สวัสดี</h1>
 
-<h3>Portfolio เพื่อศึกษาต่อ</h3>
+<h3>Medical Informatics Student</h3>
 
 <p>
 
-เขียนข้อความแนะนำตัวเองตรงนี้
+ยินดีต้อนรับสู่เว็บไซต์ Portfolio
+
+รวบรวมผลงาน กิจกรรม เกียรติบัตร และประสบการณ์ต่าง ๆ
+เพื่อใช้ประกอบการศึกษาต่อ
 
 </p>
 
@@ -56,165 +72,153 @@
 
 </div>
 
-<div class="hero-image">
+<div class="hero-img">
 
-<img src="images/profile.jpg">
+<img src="images/profile.jpg" alt="Profile">
 
 </div>
 
 </section>
 
-<!-- About -->
+<!-- ================= ABOUT ================= -->
 
 <section id="about">
 
-<h2 class="title">เกี่ยวกับฉัน</h2>
+<h2 class="title">
 
-<div class="box">
+About Me
+
+</h2>
+
+<div class="about-box">
+
+<h3>ข้อมูลส่วนตัว</h3>
+
+<br>
 
 <p>
 
-ชื่อ : นางสาวชลธิดา กงสุน
+ชื่อ : นายวุฒิศักดิ์ สวัสดี
 
 </p>
 
 <p>
 
-โรงเรียน : _______________________
+โรงเรียน : กระทุ่มแบน "วิเศษสมุทคุณ"
 
 </p>
 
 <p>
 
-แผนการเรียน : _______________________
+คณะที่สนใจ : เทคโนโลยีสารสนเทศ
 
 </p>
 
 <p>
 
-ความสามารถ :
-
-_______________________
+สาขา : สารสนเทศทางการแพทย์
 
 </p>
 
-<p>
+<br>
 
-เป้าหมาย :
+<h3>Skills</h3>
 
-_______________________
+<br>
 
-</p>
+<p>HTML</p>
+
+<div class="skill">
+<div class="skill-bar html"></div>
+</div>
+
+<p>CSS</p>
+
+<div class="skill">
+<div class="skill-bar css"></div>
+</div>
+
+<p>JavaScript</p>
+
+<div class="skill">
+<div class="skill-bar js"></div>
+</div>
+
+<p>Python</p>
+
+<div class="skill">
+<div class="skill-bar python"></div>
+</div>
 
 </div>
 
 </section>
 
-<!-- Education -->
-
-<section id="education">
-
-<h2 class="title">ประวัติการศึกษา</h2>
-
-<div class="box">
-
-<p>
-
-ระดับประถม :
-
-________________________
-
-</p>
-
-<p>
-
-ระดับมัธยมต้น :
-
-________________________
-
-</p>
-
-<p>
-
-ระดับมัธยมปลาย :
-
-________________________
-
-</p>
-
-</div>
-
-</section>
-
-<!-- Portfolio -->
+<!-- ================= PORTFOLIO ================= -->
 
 <section id="portfolio">
 
 <h2 class="title">
 
-Portfolio Gallery
+My Portfolio
 
 </h2>
 
 <div class="gallery">
 
 <div class="card">
-<img src="images/page1.jpg">
-<p>Portfolio หน้า 1</p>
+
+<img src="images/1.jpg" onclick="openPopup(this.src)">
+
+<p>ผลงานชิ้นที่ 1</p>
+
 </div>
 
 <div class="card">
-<img src="images/page2.jpg">
-<p>Portfolio หน้า 2</p>
+
+<img src="images/2.jpg" onclick="openPopup(this.src)">
+
+<p>ผลงานชิ้นที่ 2</p>
+
 </div>
 
 <div class="card">
-<img src="images/page3.jpg">
-<p>Portfolio หน้า 3</p>
+
+<img src="images/3.jpg" onclick="openPopup(this.src)">
+
+<p>ผลงานชิ้นที่ 3</p>
+
 </div>
 
 <div class="card">
-<img src="images/page4.jpg">
-<p>Portfolio หน้า 4</p>
+
+<img src="images/4.jpg" onclick="openPopup(this.src)">
+
+<p>ผลงานชิ้นที่ 4</p>
+
 </div>
 
 <div class="card">
-<img src="images/page5.jpg">
-<p>Portfolio หน้า 5</p>
+
+<img src="images/5.jpg" onclick="openPopup(this.src)">
+
+<p>ผลงานชิ้นที่ 5</p>
+
 </div>
 
 <div class="card">
-<img src="images/page6.jpg">
-<p>Portfolio หน้า 6</p>
+
+<img src="images/6.jpg" onclick="openPopup(this.src)">
+
+<p>ผลงานชิ้นที่ 6</p>
+
 </div>
-
-<div class="card">
-<img src="images/page7.jpg">
-<p>Portfolio หน้า 7</p>
-</div>
-
-<div class="card">
-<img src="images/page8.jpg">
-<p>Portfolio หน้า 8</p>
-</div>
-
-<div class="card">
-<img src="images/page9.jpg">
-<p>Portfolio หน้า 9</p>
-</div>
-
-<div class="card">
-<img src="images/page10.jpg">
-<p>Portfolio หน้า 10</p>
-</div>
-
-
 
 </div>
 
 </section>
 
-<!-- Contact -->
+<!-- ================= CONTACT ================= -->
 
 <section id="contact">
 
@@ -224,28 +228,67 @@ Contact
 
 </h2>
 
-<div class="box">
+<div class="contact-box">
 
-<p>Email : __________________</p>
+<a href="#">
 
-<p>Facebook : __________________</p>
+<i class="fa-brands fa-facebook"></i>
 
-<p>GitHub : __________________</p>
+Facebook
 
-<p>Phone : __________________</p>
+</a>
+
+<a href="#">
+
+<i class="fa-brands fa-instagram"></i>
+
+Instagram
+
+</a>
+
+<a href="#">
+
+<i class="fa-solid fa-envelope"></i>
+
+Email
+
+</a>
+
+<a href="#">
+
+<i class="fa-brands fa-github"></i>
+
+GitHub
+
+</a>
 
 </div>
 
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-© 2026 My Portfolio
+<p>
+
+© 2026 ChaiPhu Channel
+
+</p>
 
 </footer>
+
+<!-- ================= POPUP ================= -->
+
+<div id="popup">
+
+<span onclick="closePopup()">&times;</span>
+
+<img id="popup-img">
+
+</div>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-
