@@ -1,47 +1,57 @@
-// เปิดรูป
-function openImage(src) {
-    const popup = document.getElementById("popup");
-    const popupImg = document.getElementById("popup-img");
+/* ===============================
+   Animation
+================================ */
 
-    popup.style.display = "flex";
-    popupImg.src = src;
+.hero-text,
+.hero-img,
+.about-box,
+.contact-box,
+.card{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:all .8s ease;
+
 }
 
-// ปิดรูป
-function closeImage() {
-    document.getElementById("popup").style.display = "none";
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
 }
 
-// กด ESC เพื่อปิด
-document.addEventListener("keydown", function(e){
-    if(e.key === "Escape"){
-        closeImage();
-    }
-});
+/* Active Menu */
 
-// คลิกพื้นหลังเพื่อปิด
-document.getElementById("popup").addEventListener("click", function(e){
-    if(e.target.id === "popup"){
-        closeImage();
-    }
-});
+nav ul li a.active{
 
-// เอฟเฟกต์เลื่อนเข้ามา
-const cards = document.querySelectorAll(".card");
+color:#ff4d94;
 
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.style.opacity="1";
-            entry.target.style.transform="translateY(0)";
-        }
-    });
-});
+font-weight:700;
 
-cards.forEach(card=>{
-    card.style.opacity="0";
-    card.style.transform="translateY(40px)";
-    card.style.transition=".6s";
-    observer.observe(card);
-});
+position:relative;
 
+}
+
+nav ul li a.active::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:100%;
+
+height:3px;
+
+background:#ff4d94;
+
+border-radius:20px;
+
+}
