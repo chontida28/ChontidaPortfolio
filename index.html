@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 
 <meta charset="UTF-8">
@@ -10,231 +11,118 @@
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!--================ HEADER =================-->
 
 <header>
 
-<nav>
+<nav class="navbar">
 
-<h2 class="logo">Portfolio</h2>
+<a href="#" class="logo">
+Portfolio
+</a>
 
-<ul>
+<ul class="nav-menu">
 
-<li><a href="#home">Home</a></li>
+<li>
+<a href="#home">Home</a>
+</li>
 
-<li><a href="#about">About</a></li>
+<li>
+<a href="#about">About</a>
+</li>
 
-<li><a href="#portfolio">Portfolio</a></li>
+<li>
+<a href="#portfolio">Portfolio</a>
+</li>
 
-<li><a href="#contact">Contact</a></li>
+<li>
+<a href="#contact">Contact</a>
+</li>
 
 </ul>
 
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
 </nav>
 
-</header>
-
-<!-- ================= HERO ================= -->
+</header>  
+  <!--================ HERO =================-->
 
 <section class="hero" id="home">
 
+<div class="hero-content">
+
 <div class="hero-text">
 
-<h1>วุฒิศักดิ์ สวัสดี</h1>
+<span class="tag">
+✨ Welcome To My Portfolio
+</span>
 
-<h3>Medical Informatics Student</h3>
+<h1>
+
+สวัสดีครับ 👋
+
+<br>
+
+<span>วุฒิศักดิ์ สวัสดี</span>
+
+</h1>
+
+<h3>
+
+Medical Informatics Student
+
+</h3>
 
 <p>
 
 ยินดีต้อนรับสู่เว็บไซต์ Portfolio
-
-รวบรวมผลงาน กิจกรรม เกียรติบัตร และประสบการณ์ต่าง ๆ
+รวบรวมผลงาน กิจกรรม รางวัล และเกียรติบัตร
 เพื่อใช้ประกอบการศึกษาต่อ
 
 </p>
 
+<div class="hero-btn">
+
 <a href="#portfolio" class="btn">
 
-ดูผลงาน
+<i class="fa-solid fa-image"></i>
+
+ผลงาน
+
+</a>
+
+<a href="#contact" class="btn btn-outline">
+
+<i class="fa-solid fa-envelope"></i>
+
+ติดต่อ
 
 </a>
 
 </div>
 
-<div class="hero-img">
-
-<img src="images/profile.jpg" alt="Profile">
-
-</div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about">
-
-<h2 class="title">
-
-About Me
-
-</h2>
-
-<div class="about-box">
-
-<h3>ข้อมูลส่วนตัว</h3>
-
-<br>
-
-<p>
-
-ชื่อ : นายวุฒิศักดิ์ สวัสดี
-
-</p>
-
-<p>
-
-โรงเรียน : กระทุ่มแบน "วิเศษสมุทคุณ"
-
-</p>
-
-<p>
-
-คณะที่สนใจ : เทคโนโลยีสารสนเทศ
-
-</p>
-
-<p>
-
-สาขา : สารสนเทศทางการแพทย์
-
-</p>
-
-<br>
-
-<h3>Skills</h3>
-
-<br>
-
-<p>HTML</p>
-
-<div class="skill">
-<div class="skill-bar html"></div>
-</div>
-
-<p>CSS</p>
-
-<div class="skill">
-<div class="skill-bar css"></div>
-</div>
-
-<p>JavaScript</p>
-
-<div class="skill">
-<div class="skill-bar js"></div>
-</div>
-
-<p>Python</p>
-
-<div class="skill">
-<div class="skill-bar python"></div>
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= PORTFOLIO ================= -->
-
-<section id="portfolio">
-
-<h2 class="title">
-
-My Portfolio
-
-</h2>
-
-<div class="gallery">
-
-<div class="card">
-
-<img src="images/1.jpg" onclick="openPopup(this.src)">
-
-<p>ผลงานชิ้นที่ 1</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/2.jpg" onclick="openPopup(this.src)">
-
-<p>ผลงานชิ้นที่ 2</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/3.jpg" onclick="openPopup(this.src)">
-
-<p>ผลงานชิ้นที่ 3</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/4.jpg" onclick="openPopup(this.src)">
-
-<p>ผลงานชิ้นที่ 4</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/5.jpg" onclick="openPopup(this.src)">
-
-<p>ผลงานชิ้นที่ 5</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/6.jpg" onclick="openPopup(this.src)">
-
-<p>ผลงานชิ้นที่ 6</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact">
-
-<h2 class="title">
-
-Contact
-
-</h2>
-
-<div class="contact-box">
+<div class="social">
 
 <a href="#">
 
-<i class="fa-brands fa-facebook"></i>
-
-Facebook
+<i class="fa-brands fa-facebook-f"></i>
 
 </a>
 
@@ -242,53 +130,165 @@ Facebook
 
 <i class="fa-brands fa-instagram"></i>
 
-Instagram
-
-</a>
-
-<a href="#">
-
-<i class="fa-solid fa-envelope"></i>
-
-Email
-
 </a>
 
 <a href="#">
 
 <i class="fa-brands fa-github"></i>
 
-GitHub
+</a>
+
+<a href="#">
+
+<i class="fa-brands fa-tiktok"></i>
 
 </a>
 
 </div>
 
-</section>
+</div>
 
-<!-- ================= FOOTER ================= -->
+<div class="hero-image">
 
-<footer>
+<div class="circle one"></div>
 
-<p>
+<div class="circle two"></div>
 
-© 2026 ChaiPhu Channel
-
-</p>
-
-</footer>
-
-<!-- ================= POPUP ================= -->
-
-<div id="popup">
-
-<span onclick="closePopup()">&times;</span>
-
-<img id="popup-img">
+<img src="images/profile.jpg" alt="Profile">
 
 </div>
 
-<script src="script.js"></script>
+</div>
 
-</body>
-</html>
+</section>  
+  <!--================ ABOUT =================-->
+
+<section class="about" id="about">
+
+<div class="section-title">
+
+<h2>About Me</h2>
+
+<p>ประวัติส่วนตัวและทักษะ</p>
+
+</div>
+
+<div class="about-container">
+
+<!-- Profile -->
+
+<div class="about-card">
+
+<h3>
+
+<i class="fa-solid fa-user"></i>
+
+ข้อมูลส่วนตัว
+
+</h3>
+
+<div class="info">
+
+<p><strong>ชื่อ</strong><br>นายวุฒิศักดิ์ สวัสดี</p>
+
+<p><strong>โรงเรียน</strong><br>กระทุ่มแบน "วิเศษสมุทคุณ"</p>
+
+<p><strong>คณะที่สนใจ</strong><br>เทคโนโลยีสารสนเทศ</p>
+
+<p><strong>สาขา</strong><br>สารสนเทศทางการแพทย์</p>
+
+<p><strong>ความฝัน</strong><br>นักพัฒนาระบบสารสนเทศทางการแพทย์</p>
+
+</div>
+
+</div>
+
+<!-- Skills -->
+
+<div class="about-card">
+
+<h3>
+
+<i class="fa-solid fa-code"></i>
+
+Skills
+
+</h3>
+
+<div class="skill">
+
+<div class="skill-name">
+
+<span>HTML</span>
+
+<span>95%</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div class="fill html"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-name">
+
+<span>CSS</span>
+
+<span>90%</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div class="fill css"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-name">
+
+<span>JavaScript</span>
+
+<span>80%</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div class="fill js"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-name">
+
+<span>Python</span>
+
+<span>85%</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div class="fill python"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
